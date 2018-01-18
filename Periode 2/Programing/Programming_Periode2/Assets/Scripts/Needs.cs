@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Needs : MonoBehaviour {
-    private Enemy myWorker;
+    private Worker myWorker;
 
     public float Hapines;
 
@@ -11,7 +11,7 @@ public class Needs : MonoBehaviour {
 
     void Start()
     {
-        myWorker = this.gameObject.GetComponent<Enemy>();
+        myWorker = this.gameObject.GetComponent<Worker>();
         TriggerLowerNeeds();
     }
 
@@ -20,16 +20,19 @@ public class Needs : MonoBehaviour {
         CheckFood();
         CheckHapinnes();
     }
+
+    //alle vragen om food heen
     public void CheckFood()
     {
         if (food > 100)
         {
+            //als food teveel word gaat het automatish terug naar 100 (mag niet hoger dan 100)
             food = 100;
         }
 
-        else if (food >= 75 && myWorker.states == Enemy.States.ReplenischNeeds)
+        else if (food >= 75 && myWorker.states == Worker.States.ReplenischNeeds)
         {
-            myWorker.states = Enemy.States.Idle;
+            myWorker.states = Worker.States.Idle;
         }
 
         else if (food <= 25)
@@ -49,10 +52,12 @@ public class Needs : MonoBehaviour {
         }
     }
 
+    //alle vragen om Happines heen
     public void CheckHapinnes()
     {
         if(Hapines > 100)
         {
+            //als Hapinnes teveel word gaat het automatish terug naar 100 (mag niet hoger dan 100)
             Hapines = 100;
         }
 

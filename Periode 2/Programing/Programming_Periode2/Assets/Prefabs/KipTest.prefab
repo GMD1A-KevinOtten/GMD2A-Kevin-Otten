@@ -22,8 +22,8 @@ GameObject:
   - component: {fileID: 33853810740615108}
   - component: {fileID: 65680895791927570}
   - component: {fileID: 23179962346662640}
-  - component: {fileID: 114386103962780440}
   - component: {fileID: 208580080681164432}
+  - component: {fileID: 114715000308190220}
   m_Layer: 0
   m_Name: KipTest
   m_TagString: NeedsObject
@@ -58,7 +58,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a42d53373dd78b6419598369b6887f06, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -97,7 +97,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114386103962780440
+--- !u!114 &114715000308190220
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -105,10 +105,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1555267932490748}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9b3c64095fcc1846ba51d2946c820ed, type: 3}
+  m_Script: {fileID: 11500000, guid: dd3bdc477b882f04480563da9c6d3d9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   iO: {fileID: 11400000, guid: 017361d2f88cc2b4aa287bae4bb6a1ed, type: 2}
+  resourcesLeft: 0
 --- !u!208 &208580080681164432
 NavMeshObstacle:
   m_ObjectHideFlags: 1

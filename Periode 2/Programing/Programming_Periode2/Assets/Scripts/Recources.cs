@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Recources : MonoBehaviour {
 
-    public int minerals;
-    public int minMinerals;
-    public int mineralCap;
-		
+    // resource opslag
+    public int resources;
+    public int minResources;
+    public int resourceCap;
 }
