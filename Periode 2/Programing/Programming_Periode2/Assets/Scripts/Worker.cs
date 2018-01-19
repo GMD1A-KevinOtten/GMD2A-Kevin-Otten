@@ -60,6 +60,10 @@ public class Worker : MonoBehaviour {
                 }
                 nMA.destination = target.transform.position;
             }
+            else
+            {
+                states = States.Idle;
+            }
         }
 
         if (states == States.Idle && rc.resources < rc.minResources)
@@ -161,6 +165,10 @@ public class Worker : MonoBehaviour {
         if(harvestRC.resourcesLeft > 0 && rc.resources <= rc.resourceCap)
         {
             HarvestTrigger();
+        }
+        else if(harvestRC.resourcesLeft <= 0)
+        {
+            Destroy(harvestRC.gameObject);
         }
     }
 }

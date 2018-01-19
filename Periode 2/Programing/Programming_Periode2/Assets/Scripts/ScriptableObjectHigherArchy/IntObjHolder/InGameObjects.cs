@@ -17,16 +17,4 @@ public class InGameObjects : MonoBehaviour {
     {
         Destroy (gameObject);
     }
-    public void Harvest()
-    {
-        
-        if (resourcesLeft > 0)
-        {
-            resourcesLeft -= 10;
-        }
-        if (resourcesLeft <= 0)
-        {
-            Destroy(gameObject);
-        }
-    }
 }
