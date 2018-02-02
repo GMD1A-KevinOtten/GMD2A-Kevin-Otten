@@ -22,11 +22,13 @@ public class Worker : MonoBehaviour {
 
     public States states;
 
+    //functie die het replenishen van needs forceerd
     public void ForceNeeds()
     {
         states = States.ReplenischNeeds;
     }
 
+    //functie die needs repleniched als de werker niet iets aa n het harvesten is
     public void MabyNeeds()
     {
         if(states != States.Harvest)
@@ -34,12 +36,13 @@ public class Worker : MonoBehaviour {
             states = States.ReplenischNeeds;
         }
     }
-
+    //update word aleen gebruikt voor debug prints en functies aan te roepen die als de update moeten runnen zodat het wat schooner blijft
     void Update()
     {
         UpdateStates();
     }
 
+    //functie die de state van de werker checked en zo beslist wat te doen
     public void UpdateStates()
     {
         if (states == States.ReplenischNeeds)
@@ -134,6 +137,7 @@ public class Worker : MonoBehaviour {
         }
     }
 
+    //als een havestabele object verdwijnd door de worker word dit getriggerd
     void OnCollisionExit(Collision collision)
     {
         if (states == States.Harvest)
@@ -142,6 +146,7 @@ public class Worker : MonoBehaviour {
         }
     }
 
+    //de code die de dichtsbezijnde recourse object om te harvesten
     public void ChangeTarget()
     {
         float dist = Mathf.Infinity;
@@ -157,6 +162,7 @@ public class Worker : MonoBehaviour {
         }
     }
 
+    //de enum die de harvest regeld
     public IEnumerator Harvesting(float time)
     {
         yield return new WaitForSeconds(time);

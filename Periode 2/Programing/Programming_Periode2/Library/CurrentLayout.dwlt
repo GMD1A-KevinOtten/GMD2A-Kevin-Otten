@@ -424,7 +424,7 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ee060000
+    m_SelectedIDs: 76070000
     m_LastClickedID: 0
     m_ExpandedIDs: 9efbffff00000000
     m_RenameOverlay:
@@ -592,18 +592,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scripts/ScriptableObjectHigherArchy/Scriptables
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scripts/ScriptableObjectHigherArchy/Scriptables
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\- Git\GMD2A-Kevin-Otten\Periode 2\Programing\Programming_Periode2
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 80270000
-    m_LastClickedID: 10112
+    m_SelectedIDs: b6270000
+    m_LastClickedID: 10166
     m_ExpandedIDs: 000000007027000080270000fe27000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0

@@ -82,16 +82,19 @@ public class Needs : MonoBehaviour {
         //}
     }
 
+    //krijgt ingameobject en replenishes needs daarmee
     public void ReplenischMyNeeds(InGameObjects iob)
     {
         food += iob.iO.food;
     }
 
+    //initial trigger voor het verlagen van needs wat steeds weer repeat
     public void TriggerLowerNeeds()
     {
         StartCoroutine(LowerNeeds());
     }
 
+    //lowerd de needs
     public IEnumerator LowerNeeds()
     {
         yield return new WaitForSeconds(2);
